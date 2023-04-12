@@ -1,0 +1,40 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Practicando con juegos y animaciones
+    Videos : "Canvas será nuestra pantalla" y "Diseñando una bandera con un pincel" y "SIendo creativos con la bandera"
+
+ -->
+
+ <meta charset="UTF-8">
+
+ <body>
+    <h4>Canvas sera nuestra pantalla</h4>
+    <canvas width="600" height="400" > <!-- Aqui definimos los parametros del pizarron canvas-->
+
+    </canvas>
+    <script>
+         var pantalla = document.querySelector("canvas");  // Aqui creamos una variable que almacene el elemento canvas
+         var pincel = pantalla.getContext("2d"); // Aqui creamos una variable que almacene el contexto del canvas
+         pincel.fillStyle = "red"; // Aqui definimos el color del pincel
+         pincel.fillRect(0,0,200,400); // Aqui dibujamos un rectangulo en el canvas (x,y,ancho,alto)
+         pincel.fillStyle = "green"; // Aqui definimos el color del pincel
+         pincel.fillRect(400,0,200,400); // Aqui dibujamos un rectangulo en el canvas (x,y,ancho,alto)
+
+         // Dibujando triangulo
+         pincel.fillStyle = "yellow";  // Propiedad - Color del pincel
+         pincel.beginPath(); // funcion - Inicia el dibujo
+         pincel.moveTo(300,200); // funcion - Mueve el pincel a la posicion (x,y)
+         pincel.lineTo(200,400); // funcion - Dibuja una linea desde la posicion actual del pincel hasta la posicion (x,y)
+         pincel.lineTo(400,400); // funcion - Dibuja una linea desde la posicion actual del pincel hasta la posicion (x,y)
+         pincel.fill(); // funcion - Cierra el dibujo y lo rellena con el color del pincel
+
+         // Dibujando circulo
+         pincel.fillStyle = "blue";  // Propiedad - Color del pincel
+         pincel.beginPath(); // funcion - Inicia el dibujo
+         pincel.arc(300,200,50,0,2*3.14); // funcion - Dibuja un circulo (x,y,radio,anguloInicial,anguloFinal)
+         pincel.fill(); // funcion - Cierra el dibujo y lo rellena con el color del pincel
+
+      </script>
+ </body>
