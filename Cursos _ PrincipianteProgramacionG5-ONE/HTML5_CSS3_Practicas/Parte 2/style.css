@@ -1,0 +1,56 @@
+/*
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-12
+    Curso : HTML5 y CSS3 parte 2 :  Posicionamiento , listas y navegacion
+    Hoja de estilos para el index realizado en el curso pt1
+
+*/
+
+.TittlePrincipal{
+    padding-left: 30px;
+}
+
+
+#BanerBarberia {
+    width: 100%
+}
+.Principal{
+    background-color: #CCCCCC
+}
+
+.TitleCenter{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+ em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px; 
+}
+
+.diferenciales{
+    background-color: white;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.ImgDiferenciales{
+    width:50%;
+}

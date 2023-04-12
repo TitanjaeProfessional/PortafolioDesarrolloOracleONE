@@ -1,0 +1,95 @@
+/*
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-12
+    Curso : HTML5 y CSS3 parte 2 :  Posicionamiento , listas y navegacion
+    Pagina de estilos  para el curso
+
+*/
+
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position:relative;
+    margin:0 auto;
+}
+nav {
+    position: absolute;
+    top:110px;
+    right:0px;
+}
+nav li {
+   display:inline;
+   margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color : #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #e5ff00;
+}
+
+
+
+
+.Productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.Productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin : 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border:2px solid #000000;
+    border-radius: 10px;
+}
+.Productos li:hover{
+    border-color: #e5ff00;
+
+}
+.Productos li:active{
+    border-color: #088c19;
+}
+.Productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.Productos li:hover h2 {
+    font-size: 33px;
+}
+
+.DescripcionProducto{
+    font-size: 18px;
+}
+
+.PrecioProducto{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+   text-align: center;
+   background: url(Imagenes2/bg.jpg);
+   padding: 40px;
+}
+
+.Copyright{
+    color: white;
+    font-size: 13px;
+    margin : 20px;
+}
