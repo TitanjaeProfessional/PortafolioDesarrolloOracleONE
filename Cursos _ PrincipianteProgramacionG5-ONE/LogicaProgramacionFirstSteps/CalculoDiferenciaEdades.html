@@ -1,0 +1,74 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Ejercicio resuelto por instructur  y Resolucion propia
+    Articulo de Ejercicio : "Cálculo diferencia de edades"
+
+-->
+
+<meta charset="UTF-8">
+
+<body>
+
+<div>
+    <p>
+        ¿Cuántos años de diferencia tienes con tu hermano? Escribe un programa que muestre el mensaje ¨Nuestra diferencia de edad es¨, concatenando el resultado de la diferencia de tu edad con la de tu hermano (o de un amigo). La respuesta puede dar negativa, sin duda. No olvides de usar las funciones saltarLinea e imprimir y de incluir la etiqueta meta para resolver problemas de acentuación.  
+    </p>
+</div>
+<br>
+<br>
+<h3>Codigo Implementado</h3>
+<div>
+    <p>
+        function Ejecucion(){<br>
+            var nombre1 = prompt("Ingresa el nombre del hermano 1"); <br>
+            var edad1 = prompt("Ingresa la edad del hermano 1");<br>
+            var nombre2 = prompt("Ingresa el nombre del hermano 2");<br>
+            var edad2 = prompt("Ingresa la edad del hermano 2");<br>
+            
+            let difedades = DiferenciaEdadesActualizadas(edad1,edad2);<br>
+            imprimirSalida("La diferencia  de edad entre "+ nombre1 +" y " + nombre2 + " es de : "  + difedades);<br>
+    
+        } <br>
+        function imprimirSalida(Salida){ <br>
+            document.write(Salida);<br>
+        } <br>
+        function DiferenciaEdadesActualizadas(EdadActual1,EdadActual2) <br>
+        { <br>
+            var DiferenciaEdades =( EdadActual1 - EdadActual2); <br>
+            return DiferenciaEdades; <br>
+        }   <br>
+        Ejecucion(); <br>
+    
+    </p>
+</div>
+<br>
+<h3>Resultados</h3>
+
+<script>
+    function Ejecucion(){
+        var nombre1 = prompt("Ingresa el nombre del hermano 1");
+        var edad1 = prompt("Ingresa la edad del hermano 1");
+        var nombre2 = prompt("Ingresa el nombre del hermano 2");
+        var edad2 = prompt("Ingresa la edad del hermano 2");
+        
+        let difedades = DiferenciaEdadesActualizadas(edad1,edad2);
+        imprimirSalida("La diferencia  de edad entre "+ nombre1 +" y " + nombre2 + " es de : "  + difedades);
+
+    }
+    function imprimirSalida(Salida){
+        document.write(Salida);
+    }
+    function DiferenciaEdadesActualizadas(EdadActual1,EdadActual2)
+    {
+        var DiferenciaEdades =( EdadActual1 - EdadActual2);
+        return DiferenciaEdades;
+    }
+    Ejecucion();
+
+</script>
+
+
+</body>

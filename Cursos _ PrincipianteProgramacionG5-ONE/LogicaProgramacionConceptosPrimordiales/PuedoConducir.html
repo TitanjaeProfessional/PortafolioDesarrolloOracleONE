@@ -1,0 +1,61 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Ejercicio Resolucion propia
+    Articulo de Ejercicio : "¿Será qué puedo conducir?"
+
+-->
+<meta charset="UTF-8">
+<h3>¿Será qué puedo conducir?</h3>
+<body>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+    
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+    
+        var edad = parseInt(prompt("¿Cuál es tu edad?"));
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+        // Ciclo if implementado
+
+        if (edad >= 18 && tieneLicencia == "S") {
+            imprimir("Puedes conducir");
+        } else {
+            imprimir("No puedes conducir");
+        }
+    </script>
+    <br>
+    <br>
+    Codigo implementado por el profesor
+    <br>
+    <br>
+        function saltarLinea() { <br>
+            document.write("br"); <br>
+        } <br>
+    
+        function imprimir(frase) { <br>
+            document.write(frase); <br> 
+            saltarLinea();<br>
+        } <br>
+    
+        var edad = parseInt(prompt("¿Cuál es tu edad?")); <br>
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N"); <br>
+    
+        if(edad >= 18) { <br>
+            if(tieneLicencia == "S") { <br>
+                imprimir("Puedes conducir"); <br>
+            } <br>
+        } <br>
+    
+        if(edad "menor que" 18) { <br>
+            imprimir("No puedes conducir"); <br>
+        } <br>
+    
+
+</body>

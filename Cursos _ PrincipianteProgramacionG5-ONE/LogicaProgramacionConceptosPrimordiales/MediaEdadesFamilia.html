@@ -1,0 +1,33 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Video : "Acumulando Variables"
+
+ -->
+ <meta charset="UTF-8">
+ <h3>Calcular la edad media de la edades de la familia</h3>
+ <body>
+     <script>
+            function saltoLinea(){
+             document.write("<br>");
+            }
+            function imprimir(frase){
+                document.write(frase);
+                saltoLinea();
+            }
+
+            var numeromiembros = parseInt(prompt("ingresa la cantidad de personas de la familia: "));
+            var contador = 1;
+            var totalEdades = 0;
+            while(contador<=numeromiembros){
+                edad = parseInt(prompt("ingresa la edad de la persona: "));
+                totalEdades = totalEdades + edad;
+                contador = contador + 1;
+            }
+            imprimir("La suma de edades es: " + totalEdades);
+            mediaEdades = totalEdades / numeromiembros;
+            imprimir("La media de edades es: " + mediaEdades);
+            </script>
+ </body>

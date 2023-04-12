@@ -1,0 +1,57 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Video : "Mejorando el mantenimiento de código"
+
+ -->
+<meta charset="UTF-8">
+
+<body>
+    <h2>JavaScript</h2> <br>
+    <br><br>
+    --------------------------------Resolucion de profesor-------------------------------- <br><br>
+    <h3>Usando Variables</h3>
+    <script>
+
+        var anio = 2025; 
+        var saltolinea = "<br><br><br>";
+
+        document.write("Juan tiene ..."+ (anio-2000) + " años");
+
+        document.write(saltolinea);
+      
+
+        document.write("Pedro tiene ..."+ (anio-1995) + " años");
+        
+        anio =2030; 
+
+        document.write(saltolinea);
+
+        document.write("Carlos tiene ..."+ (anio-2005) + " años"); 
+      
+
+
+    
+    </script>
+    ----------------------------------------Resolucion propia---------------------------------------- <br><br>
+    <h3>Usando un ciclo for en funcion</h3>   
+    <script>
+        function Ciclobr(saltolinea1){
+            for (var i = 0; i < saltolinea1; i++) {
+                document.write("<br>");
+            }
+        }
+        var anio = 2025;
+        var saltolinea1= 1; // se debe modificar para cambiar los saltos de linea 
+        document.write("Juan tiene ..."+ (anio-2000) + " años");
+        Ciclobr(saltolinea1);
+        document.write("Pedro tiene ..."+ (anio-1995) + " años");
+        anio =2030; 
+        Ciclobr(saltolinea1);
+        document.write("Carlos tiene ..."+ (anio-2005) + " años");
+
+    </script>
+</body>
+

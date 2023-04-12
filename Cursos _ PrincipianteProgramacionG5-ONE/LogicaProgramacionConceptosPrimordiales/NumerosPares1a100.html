@@ -1,0 +1,50 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Resolucion Propia y del profesor
+    Articulo : "Todos los números pares del 1 al 100"
+
+ -->
+ <meta charset="UTF-8">
+ <h3>Todos los números pares del 1 al 100</h3>
+ <body>
+     <script>
+            function saltoLinea(){
+             document.write("<br>");
+            }
+            function imprimir(frase){
+                document.write(frase);
+                saltoLinea();
+            }
+
+            NumeroInicial = 1;
+            while(NumeroInicial <= 100){
+                if(NumeroInicial % 2 == 0){
+                    imprimir(NumeroInicial);
+                }
+                NumeroInicial = NumeroInicial + 1;
+            }
+    
+        </script>
+    <hr>
+    <h3>Resolucion del profesor</h3>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+    
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+    
+        var contador = 2;
+        while(contador <= 100) {
+            imprimir(contador);
+            contador = contador + 2; // incrementar de dos en dos
+        }
+        imprimir("FIN");
+    </script>
+ </body>

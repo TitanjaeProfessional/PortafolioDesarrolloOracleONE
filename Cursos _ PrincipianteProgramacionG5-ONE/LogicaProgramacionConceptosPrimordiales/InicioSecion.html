@@ -1,0 +1,30 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Ejercicio Resolucion propia
+    Articulo de Ejercicio : "Simulando una pantalla de inicio de sesión"
+
+-->
+<meta charset="UTF-8">
+<h2>Inicio de Secion</h2>
+<body>
+    <script>
+        contador = 1;
+
+        while(contador <=3){
+            var usuario = prompt("Ingrese su usuario");
+            var contraseña = prompt("Ingrese su contraseña");
+            var usuarioreg = "Jose";
+            var contraseñareg = "1234";
+            if(usuario == usuarioreg && contraseña == contraseñareg){
+                alert("Bienvenido");
+                break;
+            }else{
+                alert("Usuario o Contraseña incorrectos");
+                contador++;
+            }
+        }
+    </script>
+</body>

@@ -1,0 +1,91 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Ejercicio Resolucion propia
+    Articulo de Ejercicio : "¡Alerta diferente!"
+
+-->
+
+<meta charset="UTF-8">
+
+<body>
+
+<div>
+    <p>
+        Juana tiene la costumbre de colocar siempre tres asteriscos antes y después de los mensajes de advertencia. Veamos un ejemplo de su código: 
+    </p>
+</div>
+<br><br>
+<h3>Codigo Ejemplo</h3>
+<br><br>
+
+<div>
+    <p>
+        
+        var edad1 = 10; <br>
+        var edad2 = 20;<br>
+        var edad3 = 30;<br>
+        var totalEdades = edad1 + edad2 + edad3;<br>
+        var promedioEdades = totalEdades/3;<br>
+        alert("***Total de edades es " + totalEdades + "***");<br>
+        alert("***La media de las edades es " +  promedioEdades + "***");<br>
+        
+    </p>
+</div>
+<script>
+    /*
+    var edad1 = 10;
+    var edad2 = 20;
+    var edad3 = 30;
+    var totalEdades = edad1 + edad2 + edad3;
+    var promedioEdades = totalEdades/3;
+    alert("***Total de edades es " + totalEdades + "***");
+    alert("***La media de las edades es " +  promedioEdades + "***");
+    */
+    //Respuesta correcta a la pregunta
+    function mostrarAlerta(mensaje) {
+        alert("***" + mensaje + "***");
+    }
+
+    var edad1 = 10;
+    var edad2 = 20;
+    var edad3 = 30;
+    var totalEdades = edad1 + edad2 + edad3;
+    var promedioEdades = totalEdades/3;
+
+    mostrarAlerta("Total de edades es " + totalEdades);
+    mostrarAlerta("El promedio de las edades es " +  promedioEdades);
+
+</script> 
+
+<br>
+<h3>Codigo solucion</h3>
+<br>
+
+<div>
+    <p>
+        function mostrarAlerta(mensaje) { <br>
+            alert("***" + mensaje + "***");<br>
+        } <br>
+        <br>
+        var edad1 = 10;<br>
+        var edad2 = 20;<br>
+        var edad3 = 30;<br>
+        var totalEdades = edad1 + edad2 + edad3;<br>
+        var promedioEdades = totalEdades/3;<br>
+    
+        mostrarAlerta("Total de edades es " + totalEdades);<br>
+        mostrarAlerta("El promedio de las edades es " +  promedioEdades);<br>
+    </p>
+</div>
+
+
+
+
+
+
+
+
+</body>

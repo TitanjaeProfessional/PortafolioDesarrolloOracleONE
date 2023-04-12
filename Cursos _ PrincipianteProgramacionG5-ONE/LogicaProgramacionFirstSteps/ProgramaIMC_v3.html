@@ -1,0 +1,36 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Video : "Interactuando con el usuario"
+
+ -->
+ <meta charset="UTF-8">
+
+ <body>
+    <h2>Programa de Calculo de IMC</h2>
+    <br>
+    <h3>Resuelto por el profesor</h3>
+    <script>
+        function saltoLinea(){
+            document.write("<br><br><br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltoLinea();
+        }
+        function CalcularIMC(){
+            var peso = prompt("Ingrese su peso en Kg");
+            var altura = prompt("Ingrese su altura en metros");
+            var nombre1 = prompt("Ingrese su nombre");
+            var imc1 = peso/(altura*altura);
+            imprimir("El IMC de "+nombre1+" es: "+imc1);
+        }
+        CalcularIMC();
+    </script>
+
+
+
+
+ </body>

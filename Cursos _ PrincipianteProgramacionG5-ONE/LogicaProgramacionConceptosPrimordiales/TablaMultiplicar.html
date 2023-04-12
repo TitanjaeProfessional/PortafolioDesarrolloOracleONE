@@ -1,0 +1,34 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Video : "Otra forma de Repetir"
+
+ -->
+<meta charset="UTF-8">
+
+<body>
+    <script>
+        function saltoLinea(){
+            document.write("<br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltoLinea();
+        }
+
+        var multiplicando = 1;
+        imprimir("WHILE")
+        while(multiplicando <=10){
+            imprimir(5*multiplicando);
+            multiplicando = multiplicando + 1;
+        }
+        saltoLinea();
+        imprimir("FOR")
+        for(var multiplicando = 1; multiplicando <=10; multiplicando++){
+            imprimir(5*multiplicando);
+        }
+
+    </script>
+</body>

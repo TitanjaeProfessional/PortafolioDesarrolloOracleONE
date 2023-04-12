@@ -1,0 +1,41 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Video : "Interrumpiendo una Repetición"
+
+ -->
+
+ <meta charset="UTF-8">
+ <h2>Juego de adivinacion</h2>
+ <body>
+    <script>
+        function saltoLinea(){
+            document.write("<br><br><br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltoLinea();
+        }
+        function adivinarNumero(numero){
+            if(numero != numeroSecreto){
+                imprimir("Tu numero fue: "+numero+" , No adivinaste el numero secreto , el numero era "+numeroSecreto );
+            } else {
+                imprimir("Adivinaste el numero secreto ,el numero era "+numeroSecreto );
+            }
+        }
+        var intentos =1;
+        var numeroSecreto = Math.round(Math.random() * 10 );
+        while(intentos <= 3 ){
+            var numero = prompt("Adivina el numero secreto entre 1 y 10");
+            adivinarNumero(numero)
+            intentos = intentos + 1;
+        }
+
+
+
+
+
+    </script>
+ </body>

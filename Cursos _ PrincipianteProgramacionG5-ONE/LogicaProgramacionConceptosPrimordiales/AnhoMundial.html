@@ -1,0 +1,33 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Video : "Mientras que"
+
+ -->
+
+<meta charset="UTF-8">
+
+<body>
+    <h3>¿Hubo mundial de la fifa en el año....?</h3>
+    <script>
+        function saltoLinea(){
+            document.write("<br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltoLinea();
+        }
+
+        var anioMundial = 1930;
+        var limite =parseInt(prompt("Ingrese el año limite"))
+        //alert("Hubo mundial de la fifa en el año " + anioMundial);
+        while(anioMundial <= limite){
+            imprimir("Hubo mundial de la fifa en el año " + anioMundial);
+            anioMundial = anioMundial + 4;
+        }
+        //alert("fin")
+
+    </script>
+</body>

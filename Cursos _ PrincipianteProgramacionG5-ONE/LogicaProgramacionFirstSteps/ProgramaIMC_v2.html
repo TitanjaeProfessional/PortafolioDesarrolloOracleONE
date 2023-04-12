@@ -1,0 +1,45 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Video : "Explorando a fondo el retorno de funciones"
+
+ -->
+ <meta charset="UTF-8">
+
+ <body>
+    <h2>Programa de Calculo de IMC</h2>
+    <br>
+    <h3>Resuelto por el profesor</h3>
+    <script> 
+
+        function saltoLinea(){
+            document.write("<br><br><br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltoLinea();
+        }
+        function calcularIMC(peso,altura){
+            // imc = peso/(altura*altura);
+            return imc = peso/(altura*altura);
+            // return imc
+        }
+
+        //var imcChristian = calcularIMC(71,1.72);
+        //var imcFelipe = calcularIMC(75,1.73);
+
+        //imprimir("El promedio del IMC de christian y felipe es : "+(imcChristian+imcFelipe)/2 );
+
+        imprimir("El promedio del IMC de Christian y Felipe es : " + (calcularIMC(71,1.72)+calcularIMC(75,1.73))/2);
+        imprimir("El promedio del IMC de Gabriela y Luisa es : " + (calcularIMC(65,1.68)+calcularIMC(55,1.60))/2);
+
+
+
+    </script>
+   
+
+
+
+ </body>

@@ -1,0 +1,93 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Video : "Reduciendo alteraciones"
+
+ -->
+<meta charset="UTF-8">
+
+<body>
+    <h3>HTML</h3>
+    <h5>Años de nacimiento de los amigos</h5>
+    Juan nacio en el año ... <br>
+    2000<br><br>
+
+    Pedro nacio en el año ... <br>
+    1995<br><br>
+
+    Carlos nacio en el año ... <br>
+    2005
+    <br><br><br>
+    <h3>JavaScript</h3> <br>
+    ---------------------------------------Ejemplo de reduccion de alteraciones de la clase---------------------------
+    <br><br>
+    ---------------------------------Ejemplo Resolucion (Sin automatizar)--------------------------------
+    <br><br>
+    <script>
+        
+        //Ejemplo reduccion de alteraciones---Edades de Juan , Pedro y Carlos (sin automatizar)
+        document.write("Aqui directamente hacemos la resta del año actual y el año de nacimiento 2020 - año de nacimiento");
+        document.write("<br>");
+        //Juan
+        document.write("Juan tiene ..."+ (2020-2000) + " años");
+        document.write("<br>");
+        //Pedro
+        document.write("Pedro tiene ..."+ (2020-1995) + " años");
+        document.write("<br>");
+        //Carlos
+        document.write("Carlos tiene ..."+ (2020-2005) + " años"); 
+        document.write("<br>");
+        
+    </script>
+    <br><br><br>
+
+    ---------------------------------Ejemplo Resolucion (Semi Automatizado)--------------------------------
+    <script>
+
+        //Ejemplo reduccion de alteraciones---Edades de Juan , Pedro y Carlos (Semi Automatizado)
+        var anio = 2020; // Se debe continuar modificando el valor de la variable anio para que la edad de los 3 amigos se actualice
+        document.write("<br>");
+        document.write("El valor que nos entrega la varibale anio es: "+ anio );
+        document.write("<br>");
+        //juan
+        document.write("Juan tiene ..."+ (anio-2000) + " años");
+        document.write("<br>");
+        //Pedro
+        document.write("Pedro tiene ..."+ (anio-1995) + " años");
+        document.write("<br>");
+        anio =2019; //no existe necesidad de que la vuelva a mandar a llamar la palabra reservada var
+        document.write("<br>");
+        document.write("El valor que nos entrega la varibale anio es (modificada la variable anio): "+ anio );
+        document.write("<br>");
+        //Carlos
+        document.write("Carlos tiene ..."+ (anio-2005) + " años"); 
+        document.write("<br>"); //Recordar que como se escribio la variable es como se debe de ejectuar la llamada a la variable
+
+    
+    </script>
+    <br><br><br>
+    ----------------------------------------- Resolucion propia (automatica) ---------------------------
+    <br><br>
+    <h3>JavaScript :Propuesta de solucion automatica de año usando DATE().getFullYear</h3> <br>
+    
+    <script>
+        //Ejemplo reduccion de alteraciones---Edades de Juan , Pedro y Carlos (Automatizado)(Implementacion propia)
+
+        const anioActual = new Date().getFullYear();  //Nos da actualizado el año constantemente
+        document.write("El valor que nos entrega actualizado de la varibale anioActual es: "+ anioActual );
+        document.write("<br>");
+        document.write("Juan tiene ..."+ (anioActual-2000) + " años");
+        document.write("<br>");
+        //Pedro
+        document.write("Pedro tiene ..."+ (anioActual-1995) + " años");
+        document.write("<br>");
+        //Carlos
+        document.write("Carlos tiene ..."+ (anioActual-2005) + " años"); 
+        document.write("<br>");
+
+    </script>
+
+</body>
+

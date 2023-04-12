@@ -1,0 +1,89 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Primeros Pasos
+    Ejercicio resuelto por instructur  y Resolucion propia
+    Articulo de Ejercicio : "¿Alcohol o gasolina?"
+
+-->
+
+ <meta charset="UTF-8">
+ <h3>¿Alcohol o gasolina?</h3>
+ <br>
+ <div>
+    <p>
+        Problema: Si un carro tiene un tanque de 40 litros. Usando gasolina y consumiendo todo el tanque se hace un recorrido de 480 kilómetros. ¿Cuál es la eficiencia del carro usando gasolina? o sea, ¿cuántos kilómetros recorre el carro por cada litro de gasolina? Para calcular la eficiencia: divide la distancia recorrida entre la cantidad de litros gastados. Imprime el valor utilizando document.write. Organiza las cuentas en variables.
+    </p>
+ </div>
+ <br>
+ <div>
+    <p>
+        Por otro lado, si el carro usa alcohol como combustible, el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el la eficiencia del carro usando alcohol? 
+    </p>
+ </div>
+ 
+ <body>
+    -------------------------------------Resolucion propia ------------------------------------- 
+    <br><br><br> 
+    <div>
+        <p>
+            Codigo JavaScript utilizado: <br><br>
+
+            var tanque = 40; <br>
+            var distanciaGasolina = 480;<br>
+            var distanciaAlcohol = 300;<br>
+            var eficienciaGasolina = distanciaGasolina / tanque;<br>
+            var eficienciaAlcohol = distanciaAlcohol / tanque;<br>
+            document.write("La eficiencia del carro usando gasolina es de " + eficienciaGasolina + " km por litro br"); <br>
+            document.write("La eficiencia del carro usando alcohol es de " + eficienciaAlcohol + " km por litro br"); <br>
+    
+
+        </p>
+    </div> 
+    <br><br><br>
+    Resultado: <br><br>
+    <script>
+        var tanque = 40;
+        var distanciaGasolina = 480;
+        var distanciaAlcohol = 300;
+        var eficienciaGasolina = distanciaGasolina / tanque;
+        var eficienciaAlcohol = distanciaAlcohol / tanque;
+        document.write("La eficiencia del carro usando gasolina es de " + eficienciaGasolina + " km por litro <br>");
+        document.write("La eficiencia del carro usando alcohol es de " + eficienciaAlcohol + " km por litro <br>");
+
+    </script>
+    <br><br><br>
+    -------------------------------------Resolucion del instructor -------------------------------------
+    <br><br><br>
+    <div>
+        <p>
+            Codigo JavaScript utilizado: <br><br>
+            
+                var tanque = 40;<br>
+                var caminoConGasolina = 480;<br>
+                var consumoDeGasolina = caminoConGasolina/tanque;<br>
+                var caminoConAlcohol = 300;<br>
+                var consumoDeAlcohol = caminoConAlcohol/tanque;<br>
+                document.write("La eficiencia del carro usando gasolina es " + consumoDeGasolina + " km/L"); <br>
+                document.write("br"); <br>
+                document.write("La eficiencia del carro usando alcohol es " + consumoDeAlcohol + " km/L"); <br>
+        </p>
+    </div>
+    <br><br><br>
+    Resultado: <br><br>
+    <script> 
+        var tanque = 40;
+        
+        var caminoConGasolina = 480;
+        var consumoDeGasolina = caminoConGasolina/tanque;
+        
+        var caminoConAlcohol = 300;
+        var consumoDeAlcohol = caminoConAlcohol/tanque;
+        
+        document.write("La eficiencia del carro usando gasolina es " + consumoDeGasolina + " km/L"); 
+        document.write("<br>"); 
+        document.write("La eficiencia del carro usando alcohol es " + consumoDeAlcohol + " km/L");
+        
+        </script>
+ </body>

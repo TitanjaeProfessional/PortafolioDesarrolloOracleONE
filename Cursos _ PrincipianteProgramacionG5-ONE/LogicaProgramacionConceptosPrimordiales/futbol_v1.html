@@ -1,0 +1,35 @@
+<!-- 
+    Garcia De Arcos Jose Angel Eduardo 
+    Estudiante del Programa Oracle Academy G5 ONE
+    2023-04-11
+    Curso : Logica de Programacion : Conceptos Primordiales
+    Video : "Convirtiendo texto en numero"
+
+ -->
+
+ <meta charset="UTF-8">
+ <body>
+    <h2>Puntos de un equipo de futbol</em></h2>
+    <script>
+        function saltoLinea(){
+            document.write("<br><br><br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltoLinea();
+        }
+
+        var victorias = parseInt(prompt("Ingrese el numero de victorias"));
+        var empates = parseInt(prompt("Ingrese el numero de empates"));
+
+        puntosTotal = (victorias * 3) + empates;
+
+        imprimir("El total de puntos del equipo es: " + puntosTotal);
+
+
+
+
+
+    </script>
+
+ </body>
